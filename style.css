@@ -1,7 +1,18 @@
 body{
     padding: 0;
     margin: 0;
+    user-select: none;
 }
+
+*{
+    transition: 0.5s;
+}
+
+.copyit{
+user-select: text;
+}
+
+@media print { body { display: none !important; } }
 
 .highlights li {
     border: none;
@@ -199,6 +210,34 @@ li {
 /* Tap feedback */
 .social-icons a:active {
   transform: scale(0.92);
+}
+
+.bank-box table {
+    border-collapse: collapse;
+}
+
+.bank-box td {
+    padding: 7px 3px;
+}
+
+.bank-box td:last-child {
+    font-weight: 900;
+    text-align: right;
+}
+
+.bank-box tr:hover {
+    background-color: #db8686;
+}
+
+.bank-box tr {
+    line-height: normal;
+    background-color: white;
+    color: black;
+}
+
+.bank-box tr>td:first-child {
+    text-align: left;
+    font-weight: 500;
 }
 
 /* Tablet & up */

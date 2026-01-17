@@ -6,3 +6,11 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
             .scrollIntoView({ behavior: 'smooth' });
     });
 });
+
+document.addEventListener('contextmenu', (e) => {
+    const t=e.target;
+    const cn=t.className;
+    console.log(cn);
+    if(cn!="copyit")
+        e.preventDefault()
+});
