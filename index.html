@@ -5,35 +5,34 @@
     <title>PurnaYoga | Dr. Purnajita Sen</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="favicon.ico">
-    <link rel="stylesheet" href="style.css?v=2">
+    <link rel="stylesheet" href="style.css?v=3">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
 </head>
 <body>
-<section style="padding:0px">
-    <div class="video-background">
-        <!-- <video autoplay muted loop playsinline poster="Assets/fallback 1.png">
-            
-        </video> -->
+<!-- <video autoplay muted loop playsinline poster="Assets/fallback 1.png">
+    
+</video> -->
+<header class=".container-fluid">
+    <a href="#join" class="btn btn-primary">Join Now</a>
+</header>
+<div class="hero">
+    <div class="hero-content">
+        <img src="logo.jpeg" alt="PurnaYoga Logo" class="logo">
+        <h1>PurnaYoga</h1>
+        <h2 style="color: white;">Dr. Purnajita Sen</h2>
+        <p class="subtitle">
+            Yoga Coach | Ph.D. in Human Physiology | International Yoga Athlete
+        </p>
+        
+        <a href="#join" class="btn btn-primary large">Start With 10 min Audio Consultation for <span class="text-decoration-line-through">Rs.300</span> <span class="fw-bold">Rs.150</span> only</a>
     </div>
-    <div id="topsection">
-    <header class="navbar">
-        <a href="#join" class="btn-primary">Join Now</a>
-    </header>
-    <div class="hero">
-        <div class="hero-content">
-            <img src="logo.jpeg" alt="PurnaYoga Logo" class="logo">
-            <h1>PurnaYoga</h1>
-            <h2 style="color: white;">Dr. Purnajita Sen</h2>
-            <p class="subtitle">
-                Yoga Coach | Ph.D. in Human Physiology | International Yoga Athlete
-            </p>
-            
-            <a href="#join" class="btn-primary large">Register Now</a>
-        </div>
-    </div>
-    <div></div>
-    </div>
-</section>
-
+</div>
+<div id="brandLogo">
+    <img src="Assets/logo_toi.jpeg">
+    <img src="Assets/logo_mio.jpeg">
+    <img src="Assets/logo_hp.jpeg">
+</div>
 <main id="contentSection">
 <section class="about">
     <h2>KNOW YOUR COACH</h2>
@@ -123,9 +122,8 @@ Why Dr. Sen?
     </ul>
 </p>
 <div align="center" style="color:red;">Rate @ <span id="mainprice">Rs.11,988/-</span> <span id="actualprice">Rs.10,000/-</span> Only</div>
-<div align="center" style="margin-top: 15px;"><a href="#join" class="btn-primary">Join Now</a></div>
-</section>
-<section>
+<div align="center" style="margin-top: 15px;"><a href="#join" class="btn btn-primary">Join Now</a></div>
+
 <h2 style="margin-top: 68px;">Group Yoga Sessions</h2>
 <p>
     <b>What you will get:</b>
@@ -156,10 +154,7 @@ Why Dr. Sen?
     </ul>
 </p>
 <div align="center" style="color:red;">Rate @ <span id="mainprice">Rs.3,500/-</span> <span id="actualprice">Rs.2,999/-</span> Only</div>
-<div align="center" style="margin-top: 15px;"><a href="#join" class="btn-primary">Join Now</a></div>
-</section>
-<section>
-<a id="freeaudiobtn" href="#join" style="background-color: #0a5c4f;" class="btn-primary large">Start 10 Minutes Free Audio Consultation</a>
+<div align="center" style="margin-top: 15px;"><a href="#join" class="btn btn-primary">Join Now</a></div>
 </section>
 
 <section class="payment" id="join">
@@ -173,24 +168,29 @@ Why Dr. Sen?
         <table>
             <tr>
                 <td>Account Name:</td>
-                <td class="copyit">TBD</td>
+                <td class="copyit">Purnajita Sen</td>
             </tr>
             <tr>
                 <td>Bank Name:</td>
-                <td class="copyit">TBD</td>
+                <td class="copyit">State Bank of India</td>
             </tr>
             <tr>
-                <td>Account Number</td>
-                <td class="copyit">TBD</td>
+                <td>Branch:</td>
+                <td class="copyit">TLA House</td>
             </tr>
             <tr>
-                <td>IFSC Code</td>
-                <td class="copyit">TBD</td>
+                <td>Account Number:</td>
+                <td class="copyit">30557641506</td>
+            </tr>
+            <tr>
+                <td>IFSC Code:</td>
+                <td class="copyit">SBIN0005559</td>
             </tr>
             <tr>
                 <td><label for="prodSel">Payment To</label></td>
-                <td><select id="prodSel"><option selected>Personal Yoga Sessions</option>
+                <td><select class="form-select" id="prodSel"><option selected>Personal Yoga Sessions</option>
                 <option>Group Yoga Sessions</option></select></td>
+                <option>10 Min Audio Consultancy</option>
             </tr>
             <tr>
                 <td>UPI ID</td>
@@ -199,10 +199,65 @@ Why Dr. Sen?
         </table>
     </div>
 
-    <a href="GOOGLE_FORM_LINK_HERE" target="_blank" class="btn-primary large">
+    <a href="GOOGLE_FORM_LINK_HERE" target="_blank" class="btn btn-primary large">
         Proceed to Registration Form
     </a>
 </section>
+
+<section id="faq-section" class="accordion" aria-labelledby="faq-title">
+    <h2 id="faq-title">Frequently Asked Questions</h2>
+    <article class="accordion-item">
+        <h3 class="accordion-header">
+            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                Are online classes as effective as in-person?
+            </button>
+        </h3>
+        <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#faq-section">
+            <p class="accordion-body">Yes. Online sessions are live and interactive, with real-time feedback on your posture. I'll guide adjustments verbally or demonstrate modifications on camera. Many students find online classes just as rewarding, especially with flexible timings.</p>
+        </div>
+    </article>
+    <article class="accordion-item">
+        <h3 class="accordion-header">
+            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapse2" aria-expanded="true" aria-controls="collapse2">
+                I'm not flexible, can I still do yoga?
+            </button>
+        </h3>
+        <div id="collapse2" class="accordion-collapse collapse show" data-bs-parent="#faq-section">
+            <p class="accordion-body">Yes! You do not need to be flexible to start yoga; flexibility is a result of practice, not a requirement. Yoga is for every body type.</p>
+        </div>
+    </article>
+    <article class="accordion-item">
+        <h3 class="accordion-header">
+            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapse3" aria-expanded="true" aria-controls="collapse3">
+                What do I need for my first class?
+            </button>
+        </h3>
+        <div id="collapse3" class="accordion-collapse collapse show" data-bs-parent="#faq-section">
+            <p class="accordion-body">Bring a yoga mat, a water bottle, and a towel. Comfortable clothing that allows movement is recommended.</p>
+        </div>
+    </article>
+    <article class="accordion-item">
+        <h3 class="accordion-header">
+            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapse4" aria-expanded="true" aria-controls="collapse4">
+                What style of yoga do you teach?
+            </button>
+        </h3>
+        <div id="collapse4" class="accordion-collapse collapse show" data-bs-parent="#faq-section">
+            <p class="accordion-body">I specialize in Hatha/Vinyasa Flow, which focuses on aligning movement with breath, suitable for all levels.</p>
+        </div>
+    </article>
+    <article class="accordion-item">
+        <h3 class="accordion-header">
+            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapse5" aria-expanded="true" aria-controls="collapse5">
+                What should I eat before class?
+            </button>
+        </h3>
+        <div id="collapse5" class="accordion-collapse collapse show" data-bs-parent="#faq-section">
+            <p class="accordion-body">It is best to practice on an empty stomach or wait 2-3 hours after a heavy meal. A light snack (like fruit or nuts) is okay 30-60 minutes before.</p>
+        </div>
+    </article>
+</section>
+
 <section>
 <div id="i1" align="center">
     <div class="c1">3M+</div>
@@ -214,7 +269,98 @@ Why Dr. Sen?
     <div class="c1">4.9/5</div>
     <div class="c2">Average Satisfaction Rating</div>
 </div>
+</section>
+<section aria-labelledby="testimonials-title" class="py-5">
+    <div class="container">
 
+        <!-- Section Title -->
+        <header class="text-center mb-4">
+            <h2 id="testimonials-title" class="fw-bold">
+                Testimonials
+            </h2>
+            <p class="text-muted">
+                Real experiences from people who joined the yoga sessions
+            </p>
+        </header>
+
+        <!-- Testimonials Carousel -->
+        <div id="testimonialCarousel" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+
+                <!-- Testimonial 1 -->
+                <div class="carousel-item active">
+                    <figure class="card shadow-sm border-0 mx-auto" style="max-width: 720px;">
+                        <div class="card-body text-center p-4">
+                            <blockquote class="blockquote mb-3">
+                                <p class="fs-5">
+                                    &ldquo;Very well-structured and easy-to-follow sessions. Even as a beginner, I never felt left out. My stamina and flexibility have improved, and I feel more energetic throughout the day.&rdquo;
+                                </p>
+                            </blockquote>
+                            <figcaption class="blockquote-footer mt-2">
+                                Sujeet Singh <cite title="Location">Chandigarh</cite>
+                            </figcaption>
+                        </div>
+                    </figure>
+                </div>
+
+                <!-- Testimonial 2 -->
+                <div class="carousel-item">
+                    <figure class="card shadow-sm border-0 mx-auto" style="max-width: 720px;">
+                        <div class="card-body text-center p-4">
+                            <blockquote class="blockquote mb-3">
+                                <p class="fs-5">
+                                    &ldquo;I had stiffness in my neck and shoulders for years. After regularly attending these yoga sessions, my posture has improved and the pain has reduced a lot. She gives personal attention, which makes a big difference.&rdquo;
+                                </p>
+                            </blockquote>
+                            <figcaption class="blockquote-footer mt-2">
+                                Rajesh Kumar <cite title="Location">Uttar Pradesh</cite>
+                            </figcaption>
+                        </div>
+                    </figure>
+                </div>
+
+                <!-- Testimonial 3 -->
+                <div class="carousel-item">
+                    <figure class="card shadow-sm border-0 mx-auto" style="max-width: 720px;">
+                        <div class="card-body text-center p-4">
+                            <blockquote class="blockquote mb-3">
+                                <p class="fs-5">
+                                    &ldquo;I am a homemaker and was looking for something to improve my flexibility and energy levels. These yoga sessions are perfect for beginners like me. The atmosphere is very positive, and I always feel refreshed after class.&rdquo;
+                                </p>
+                            </blockquote>
+                            <figcaption class="blockquote-footer mt-2">
+                                Sheetal <cite title="Location">Bengaluru</cite>
+                            </figcaption>
+                        </div>
+                    </figure>
+                </div>
+
+            </div>
+
+            <!-- Controls -->
+            <button class="carousel-control-prev" type="button" data-bs-target="#testimonialCarousel" data-bs-slide="prev" aria-label="Previous testimonial">
+                <span class="carousel-control-prev-icon"></span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#testimonialCarousel" data-bs-slide="next" aria-label="Next testimonial">
+                <span class="carousel-control-next-icon"></span>
+            </button>
+        </div>
+
+        <!-- Video Testimonial -->
+        <div class="video-testimonial mt-5 text-center">
+            <h3 class="mb-3">Watch a Member Story</h3>
+            <div class="ratio ratio-16x9 mx-auto" style="max-width: 720px;">
+                <video controls preload="metadata">
+                    <source src="Assets/Testomonials.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+<section>
 <div class="social-icons">
 
   <a href="https://www.facebook.com/share/17pV98Etpc/" target="_blank" aria-label="Facebook">
@@ -234,14 +380,11 @@ Why Dr. Sen?
   </a>
 
 </div>
-</div>
-<div style="display: flex;height: 100%; flex-direction: column; justify-content: space-between;">
-    <div></div>
-    <footer>
-        <p>© 2026 PurnaYoga | All Rights Reserved</p>
-    </footer>
-</div>
 </section>
-<script src="script.js?v=2"></script>
+</main>
+<footer class="container-fluid">
+        <p>© 2026 PurnaYoga | All Rights Reserved</p>
+</footer>
+<script src="script.js?v=3"></script>
 </body>
 </html>
