@@ -61,31 +61,6 @@ header {
     background: #074137a4;
 }
 
-.logo {
-    height: 110px;
-}
-
-.hero {
-    background: linear-gradient(to right, #0a5c4eb0, #138a72af);
-    color: #fff;
-    padding: 100px 20px;
-    text-align: center;
-}
-
-.hero h1 {
-    font-size: 3rem;
-}
-
-.hero h2 {
-    margin-top: 10px;
-    font-weight: 400;
-}
-
-.subtitle {
-    margin-top: 15px;
-    font-size: 1.2rem;
-}
-
 .location {
     margin-bottom: 30px;
     font-style: italic;
@@ -140,10 +115,6 @@ h2 {
     border-radius: 6px;
     max-width: 400px;
     box-shadow: 0 2px 8px rgba(0,0,0,0.1);
-}
-
-.btn-primary.large {
-    font-size: 1.1rem;
 }
 
 footer {
@@ -252,4 +223,51 @@ div#brandLogo>img {
     width: 33vw;
     max-width: 192px;
     min-width: 95px;
+}
+
+.hero {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    color: #fff;
+}
+
+/* Background video */
+.hero-video {
+    object-fit: cover;
+    z-index: 0;
+}
+
+/* Content above video */
+.hero-content {
+    position: relative;
+    z-index: 2;
+}
+
+.hero h1 {
+    font-size: clamp(2.2rem, 5vw, 3rem);
+}
+
+.hero h2 {
+    font-weight: 400;
+}
+
+.hero h1,.hero h2,.hero p{
+    text-shadow: black 2px 2px 1px;
+}
+
+.subtitle {
+    margin-top: 15px;
+    font-size: 1.2rem;
+}
+
+.logo {
+    height: 110px;
+}
+
+/* Mobile optimisation */
+@media (max-width: 768px) {
+    .hero {
+        min-height: 90vh;
+    }
 }

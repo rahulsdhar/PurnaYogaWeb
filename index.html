@@ -16,18 +16,49 @@
 <header class=".container-fluid">
     <a href="#join" class="btn btn-primary">Join Now</a>
 </header>
-<div class="hero">
-    <div class="hero-content">
-        <img src="logo.jpeg" alt="PurnaYoga Logo" class="logo">
-        <h1>PurnaYoga</h1>
-        <h2 style="color: white;">Dr. Purnajita Sen</h2>
-        <p class="subtitle">
-            Yoga Coach | Ph.D. in Human Physiology | International Yoga Athlete
-        </p>
-        
-        <a href="#join" class="btn btn-primary large">Start With 10 min Audio Consultation for <span class="text-decoration-line-through">Rs.300</span> <span class="fw-bold">Rs.150</span> only</a>
+<section class="hero position-relative overflow-hidden">
+    
+    <!-- Background Video -->
+    <video
+        class="hero-video position-absolute top-0 start-0 w-100 h-100"
+        autoplay
+        muted
+        loop
+        playsinline
+        preload="metadata"
+        aria-hidden="true"
+    >
+        <source src="Assets/hero-background.mp4" type="video/mp4">
+    </video>
+
+    <!-- Overlay (for readability) -->
+    <div class="hero-overlay position-absolute top-0 start-0 w-100 h-100"></div>
+
+    <!-- Content -->
+    <div class="container position-relative">
+        <div class="hero-content text-center">
+            <img src="logo.jpeg" alt="PurnaYoga logo" class="logo mb-3">
+
+            <!-- ONE H1 only (SEO rule respected) -->
+            <h1>PurnaYoga</h1>
+
+            <h2 class="text-white fs-4 mt-2">
+                Dr. Purnajita Sen
+            </h2>
+
+            <p class="subtitle">
+                Yoga Coach | Ph.D. in Human Physiology | International Yoga Athlete
+            </p>
+
+            <a href="#join" class="btn btn-primary btn-lg mt-3">
+                Start with 10-minute Audio Consultation for
+                <span class="text-decoration-line-through">₹300</span>
+                <span class="fw-bold">₹150</span>
+            </a>
+        </div>
     </div>
-</div>
+
+</section>
 <div id="brandLogo">
     <img src="Assets/logo_toi.jpeg">
     <img src="Assets/logo_mio.jpeg">
@@ -35,6 +66,7 @@
 </div>
 <main id="contentSection">
 <section class="about">
+    <img src="Assets/IMG.webp" class="rounded mx-auto img-fluid" alt="face">
     <h2>KNOW YOUR COACH</h2>
     <h3 style="margin-bottom: 20px">Dr Purnajita Sen | PhD in Human Physiology | State Govt. Yoga Coach</h3>
     <p style="text-align: justify">
