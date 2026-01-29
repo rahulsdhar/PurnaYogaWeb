@@ -14,7 +14,7 @@ document.addEventListener('contextmenu', (e) => {
         e.preventDefault()
 });
 
-const PriceSelAmt=[10000,2999,150];
+const PriceSelAmt=[10000,2999,150,1000];
 
 window.addEventListener('DOMContentLoaded',init)
 var CourseSelectDOM,PayPriceBtnAmtTextDOM,UPIDOM,UPIDBtnDOM;
