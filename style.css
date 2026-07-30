@@ -250,13 +250,11 @@
  .trust-logos img {
      height: 45px;
      opacity: 0.6;
-     filter: grayscale(100%);
      transition: var(--transition);
  }
 
  .trust-logos img:hover {
      opacity: 1;
-     filter: grayscale(0%);
  }
 
  /* Sections General */
